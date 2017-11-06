@@ -1,3 +1,4 @@
+//Calculates different paths to 2 of a conjecture I devised
 #include <iostream>
 #include <cmath>
 #include <unistd.h>	
