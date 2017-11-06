@@ -14,22 +14,18 @@ def isprime(n):
             return False
     return True
 
-status = True
 counter = 0
 num = int(input("Enter number: "))
 
-while status:
+while num != 2:
 	print(int(num))
 	time.sleep(.04)
 	if isprime(num):
 		num = (num*num)-1
+	elif num % 2 == 0:
+		num /= 2
 	else:
-		if num%2 == 0:
-			num/=2
-		else:
-			num = num+1
-	counter = counter+1
-	if num == 2:
-		status = False
+		num += 1
+	counter += 1
 print(2)
 print("It took", counter, "steps")
