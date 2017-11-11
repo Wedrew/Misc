@@ -24,7 +24,6 @@ int main()
 		{
 			cout << " (prime)" << endl;
 			num = (num*num)-1;
-			//num = (buff1+buff2+num)+(abs(counter1-counter2));
 			touchedPrimes++;
 		} else
 		{
