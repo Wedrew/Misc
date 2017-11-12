@@ -14,15 +14,16 @@ def isprime(n):
             return False
     return True
 
-for x in range(2,100):
+for x in range(2,1001):
 	counter = 0
-	num = x
-	while num != 2:
-		if isprime(num):
-			num = (num*num)-1
-		elif num % 2 == 0:
-			num /= 2
-		else:
-			num += 1
-		counter += 1
-	print(x, " took", counter, "steps")
+	if isprime(x):
+		num = x
+		while num != 2:
+			if isprime(num):
+				num = (num*num)-1
+			elif num % 2 == 0:
+				num /= 2
+			else:
+				num += 1
+			counter += 1
+		print(x, " took", counter, "steps")
