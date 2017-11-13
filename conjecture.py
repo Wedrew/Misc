@@ -16,7 +16,6 @@ def isprime(n):
 
 for x in range(2,1001):
 	counter = 0
-	if isprime(x):
 		num = x
 		while num != 2:
 			if isprime(num):
