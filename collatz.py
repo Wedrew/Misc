@@ -1,3 +1,4 @@
+#Calculates different paths to one for the Collatz conjecture
 def collatz_sequence(x):
     seq = [x]
     if x < 1:
