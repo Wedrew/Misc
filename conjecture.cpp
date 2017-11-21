@@ -1,4 +1,4 @@
-//Calculates different paths to 2 of a conjecture I devised
+//Calculates different paths to 2 of a conjecture I devised (Use python version as it supports infinite precision...)
 #include <iostream>
 #include <cmath>
 #include <unistd.h>	
