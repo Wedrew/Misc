@@ -15,6 +15,8 @@ triangle = [[75],
 			[63,66,4,68,89,53,67,30,73,16,69,87,40,31],
 			[4,62,98,27,23,9,70,98,73,93,38,53,60,4,23]]
 
+print(triangle)
+
 for x in range(len(triangle)-2,-1,-1):
 	newrow = []
 	for y in range(0,len(triangle[x])):
@@ -28,4 +30,4 @@ for x in range(len(triangle)-2,-1,-1):
 	triangle[x+1] = 0
 	triangle[x] = newrow
 
-print(triangle[0][0])
+#print(triangle[0][0])

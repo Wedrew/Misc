@@ -1,10 +1,9 @@
 #Calculates the highest sum from top to bottom (adjacent numbers) uses file input
-triangle = [[]]
-
+triangle= [[]]
 with open('p067_triangle.txt') as f:
-	for line in f:
-		data = line.split()
-		print(data)
+	triangle = [line.split() for line in f]
+
+f.close()
 
 for x in range(len(triangle)-2,-1,-1):
 	newrow = []
