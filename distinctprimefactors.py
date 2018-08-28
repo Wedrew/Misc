@@ -15,15 +15,15 @@ def primeFactors(n):
 
 	factors.append(int(n))
 
-	if len(factors) > len(set(factors)):
-	    for x in range(0, len(factors)):
-	        for y in range (x+1, len(factors)):
-	            if factors[x] == factors[y]:
-	                buff = factors[x]
-	                factors.remove(buff)
-	                factors.remove(buff)
-	                factors.append(buff*buff)
-	                break
+	# if len(factors) > len(set(factors)):
+	#     for x in range(0, len(factors)):
+	#         for y in range (x+1, len(factors)):
+	#             if factors[x] == factors[y]:
+	#                 buff = factors[x]
+	#                 factors.remove(buff)
+	#                 factors.remove(buff)
+	#                 factors.append(buff*buff)
+	#                 break
 
 	if 1 in factors:
 		factors.remove(1)
